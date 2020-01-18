@@ -1,0 +1,138 @@
+.profile-header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.profile-pic {
+    text-align: end;
+}
+
+.profile-pic>img {
+    border-radius: 50%;
+    width: 100px;
+    border: 3px solid #D0BCF2;
+    padding: 3px;
+}
+
+.profile-text>h2 {
+    font-weight: normal;
+}
+
+.cont-work-ed {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.contacts-work, .education {
+    text-align: left;
+}
+
+.skills>#diagram, .profile-text {
+    text-align: center;
+}
+
+.contacts>h2, .education, .work, .work>h3, .education>h3, .skills, .about-me {
+    font-family: 'intro_bookregular';
+}
+
+.contacts>p, .work>p, .education>p, .about-me>p, .profile-text {
+    font-family: 'intro_lightregular';
+}
+
+.cont-work-ed h2 {
+    margin: 0 0 0 50px;
+}
+
+body {
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 20px;
+    background-image:url("background.png");
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+.profile-header {
+    margin-bottom: 25px;
+}
+
+.about-me {
+    margin-top: 25px;
+}
+
+h2 {
+    line-height: 0em;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+ins {
+    border-bottom: 1.5px solid black;
+    text-decoration: none;
+}
+
+.contacts p:first-of-type, .work h3:first-of-type, .education h3:first-of-type {
+    padding-top: 16px;
+}
+
+.contacts {
+    margin-bottom: 26px;
+}
+
+.skills h2, .about-me h2 {
+    margin: 0 0 0 50px;
+}
+
+.about-me p {
+    margin-top: 25px;
+}
+
+.education p {
+    margin-block-end: 8px;
+    margin-block-start: 8px;
+}
+
+.education h3 {
+    margin-block-end: 6px;
+}
+
+#diagram {
+    margin-top: 25px;
+}
+
+a {
+    color: blue;
+}
+
+
+@font-face {
+    font-family: 'intro_bookregular';
+    src: url('intro-book-webfont.woff2') format('woff2'), url('intro-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'intro_lightregular';
+    src: url('intro-light-webfont.woff2') format('woff2'), url('intro-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (max-width: 600px) {
+    .cont-work-ed {
+        display: block;
+    }
+    .profile-header {
+        display: block;
+    }
+    .profile-pic {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        width: 90%;
+    }
+}
