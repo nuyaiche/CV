@@ -47,9 +47,9 @@ body {
     margin: 0 auto;
     width: 50%;
     margin-top: 20px;
-    background-image:url("background.png");
+    background-image: url("background.png");
     background-repeat: no-repeat;
-    background-position: center center; 
+    background-position: center center;
 }
 
 .profile-header {
@@ -102,6 +102,10 @@ ins {
 
 a {
     color: blue;
+}
+
+.work p {
+    margin-top: 6px;
 }
 
 
